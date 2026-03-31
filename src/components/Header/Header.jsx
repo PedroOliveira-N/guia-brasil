@@ -4,6 +4,7 @@ import { IoAirplane } from "react-icons/io5";
 import logo from "../../assets/logo.png";
 
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -16,9 +17,17 @@ export default function Header() {
       </div>
 
       <div className={styles.icones}>
-        <FaHome className={styles.icone} />
-        <IoAirplane className={styles.icone} />
-        <IoMdPerson className={styles.icone} />
+        <Link to="/">
+          <FaHome className={styles.icone} />
+        </Link>
+        
+        <Link to="/locais">
+          <IoAirplane className={styles.icone} />
+        </Link>
+        
+        <Link to="/meuslocais">
+          <IoMdPerson className={styles.icone} />
+        </Link>
       </div>
     </div>
   );
