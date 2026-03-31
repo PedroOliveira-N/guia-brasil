@@ -1,0 +1,47 @@
+.Header {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px #757575 ;
+}
+
+.icones{
+    display: flex;
+    flex: 0 10 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.icone{
+    font-size: larger;
+    height: auto;
+    color: #000;
+}
+
+.Header img{
+    width: 80px;
+    height: auto;
+}
+
+.titulo{
+    color:#000;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    font-family: "Oswald", system-ui;
+    letter-spacing: 6px;
+    font-size: 210%;
+}
+
+.titleBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

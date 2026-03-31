@@ -1,19 +1,25 @@
 import { FaHome } from "react-icons/fa";
-import './Header.css'
 import { IoMdPerson } from "react-icons/io";
 import { IoAirplane } from "react-icons/io5";
+import logo from "../../assets/logo.png";
 
-export default function Header () {
-    return(
-        <div className='Header'>
-            <h1 className="titulo">Guia Brasil</h1>
+import styles from "./Header.module.css";
 
+export default function Header() {
+  return (
+    <div className={styles.Header}>
+      <div className={styles.titleBox}>
+        <img src={logo} alt="Logo" />
+        <h1 className={styles.titulo}>
+          Guia<br />Brasil
+        </h1>
+      </div>
 
-            <div className="icones">
-                <FaHome className="icone"/>
-                <IoAirplane className="icone"/>
-                <IoMdPerson className="icone"/>
-            </div>
-        </div>
-    )
+      <div className={styles.icones}>
+        <FaHome className={styles.icone} />
+        <IoAirplane className={styles.icone} />
+        <IoMdPerson className={styles.icone} />
+      </div>
+    </div>
+  );
 }
