@@ -1,7 +1,36 @@
 .HomePage {
     margin: 20px 17px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
 
-    background-color: #D9D9D9;
+    background-color: #ffffff;
+}
+
+.titleBox {
+    display: flex;
+    flex-direction: row;
+
+    text-align: start;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    font-family: "Oswald", system-ui;
+    letter-spacing: 6px;
+    font-size: 230%;
+}
+
+.titleBox img{
+    width: 50%;
+    max-width: 50rem;
+    height: auto;
+    margin-left: 10%;
+}
+
+p {
+    background-color: #ffffff;
 }
